@@ -34,9 +34,9 @@ try:
 
     # Process the data
 
-    counts = df.groupby(['Country', 'Postal Code']).size().reset_index(name='Count')
+    counts = df.groupby(['Country', 'Postcode']).size().reset_index(name='Count')
 
-    counts['Label'] = counts['Country'] + ' - ' + counts['Postal Code'].astype(str)
+    counts['Label'] = counts['Country'] + ' - ' + counts['Postcode'].astype(str)
 
     
 
